@@ -13,6 +13,11 @@ import org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager
 import com.branchitup.service.Flyway;
 import com.branchitup.system.Utils;
 
+/**
+ * 
+ * @author meir
+ *
+ */
 @Configuration
 public class DataConfig {
 	
