@@ -1,0 +1,28 @@
+/*
+.tundra .dijitBorderContainer {
+	background-color: #fff;
+	padding: 0px;
+*/
+/*
+.soria .dijitToolbar{
+	background: url();
+	background-color: #E1EBFB;
+	border: 0px solid gray;
+}
+*/
+.dojoDndItem{
+	/*background: white;*/
+}
+.dojoDndItemSelected{
+	background: #d3e3f8;
+}
+
+.dojoDndItemAnchor{
+	background: #d3e3f8;
+}
+
+.tundra .dijitSplitContainer-dijitContentPane, 
+.tundra .dijitBorderContainer-dijitContentPane{
+	background-color: #FFFFFF;
+	padding: 0;
+}

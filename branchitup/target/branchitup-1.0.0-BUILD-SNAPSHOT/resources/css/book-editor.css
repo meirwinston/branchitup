@@ -1,0 +1,117 @@
+.bookeditor{
+}
+.listTable{
+	border-spacing: 0;
+	border-left: 1px solid gray;
+	margin-left: 5px;
+}
+
+.listTable tr > td{
+	padding: 5px;
+}
+
+div[name='sheetSlot']{
+	border-bottom: 1px solid gray; 
+	width: 5px;
+}
+
+/* #bookeditor\.sheetsDropdownContainer{
+	padding-left: 20px;
+}
+
+#bookeditor\.sheetsVisibilityContainer{
+	padding-left: 20px;
+} */
+
+div#bookeditor\.centerPane{
+	padding-left: 15px;
+}
+div#bookeditor\.sheetsContainer{
+	height: 500px;
+}
+
+*[name='sheetItem']{
+	width: 100px;
+	height: 150px;
+	border: 1px solid gray;
+	display: inline-block;
+	margin: 20px;
+	overflow: hidden;
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 5px #888888;
+	text-align: center;
+	position: relative;
+	padding: 3px;
+	word-wrap: break-word;
+	vertical-align: top;
+}
+
+*[name='sheetItemBottomPane']{
+	position: absolute;
+	bottom: 0;
+}
+
+img[name='sheetItemClose']{
+	float: right;
+}
+
+div[name='sheetItemSequenceIndex']{
+	display: table;
+}
+
+img#bookditor\.coverImage{
+	width: 200px;
+	height: auto;
+}
+
+img#bookeditor\.submitButtonImg{
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+/* img#bookeditor\.submitButtonImg:hover{
+	border: 1px solid orange;
+} */
+
+.textarea{
+	width: 700px;
+	height: 180px !important;
+}
+
+#sheetsContainerNotes{
+    border: 1px solid #1070C5;
+    color: #1070C5;
+    display: block;
+    font-size: small;
+    padding: 5px;
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+/*--*/
+/* 
+*[name='itemWrapper']{
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	vertical-align: top; required for alignment in chrome and safari
+}
+
+div.userItemLinksPanel{
+	display: block;
+	padding-top: 5px;
+}
+*/
+
+.userItemLink:hover{
+	cursor: pointer;
+	color: orange;
+} 
+
+#bookeditor\.sheetsTable{
+	width: 100%;
+}
+
+#bookeditor\.sheetsTable td{
+	border-bottom: 1px dotted #dddddd;
+}

@@ -1,0 +1,14 @@
+#branchitup_footer{
+	direction: rtl;
+	border-top: 1px solid #DDDDDD;
+	margin-top: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.footerLink{
+	color: grey;
+	text-decoration: none;
+	font-size: smaller;
+}
+

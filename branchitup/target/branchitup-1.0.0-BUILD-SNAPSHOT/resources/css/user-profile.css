@@ -1,0 +1,16 @@
+#userprofile\.profileImage{
+	width: 200px;
+	height: auto;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+#userprofile\.centerPane{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+}
+
+div#userprofile\.aboutMe{
+	display: inline-block;
+}

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.branchitup</groupId>
+	<artifactId>branchitup</artifactId>
+	<name>branchitup</name>
+	<packaging>war</packaging>
+	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java-version>1.6</java-version>
+		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<org.springframework.security-version>3.1.0.RELEASE</org.springframework.security-version>
+		<org.aspectj-version>1.6.12</org.aspectj-version>
+		<org.slf4j-version>1.6.4</org.slf4j-version> 
+		<hibernate-version>4.1.0.Final</hibernate-version>
+		<cglib-version>2.2.2</cglib-version>
+		<log4j-version>1.2.15</log4j-version>
+		<jstl-version>1.2</jstl-version>
+		<org.codehaus.jackson-version>1.9.4</org.codehaus.jackson-version>
+		<!-- <net.coobird.thumbnailator-version>0.3.10</net.coobird.thumbnailator-version> -->
+		
+		<!-- flyway properties - Properties are prefixed with flyway. -->
+		
+		<!-- <flyway.user>root</flyway.user>
+		<flyway.password>root</flyway.password>
+		<flyway.schemas>branchitup</flyway.schemas>
+		<flyway.placeholders.keyABC>valueXYZ</flyway.placeholders.keyABC>
+		<flyway.placeholders.otherplaceholder>value123</flyway.placeholders.otherplaceholder>
+		 -->
+	</properties>
+	<repositories>
+		<repository>
+			<id>psiegman-repo</id>
+			<url>https://github.com/psiegman/mvn-repo/tree/master/releases</url>
+		</repository>
+	</repositories>
+	<dependencies>
+	
+		<!-- flyway -->
+		<!-- <dependency>
+			<groupId>com.googlecode.flyway</groupId>
+			<artifactId>flyway-maven-plugin</artifactId>
+			<version>2.1.1</version>
+		</dependency> -->
+		
+		
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.8.6</version>
+		</dependency>
+	
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				 </exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+			
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!--  -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-asm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!--
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		 -->
+		<!-- spring mock for JUnit tests -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-mock</artifactId>
+			<version>2.0.8</version>
+		</dependency>
+		<!-- AspectJ -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>	
+		
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.jms</groupId>
+					<artifactId>jms</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+			</exclusions>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		
+		<!-- Allow Programmatic Configurations -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>${cglib-version}</version>
+		</dependency>
+		
+		<!-- Servlet 3 API -->
+		<dependency>
+	    <groupId>org.apache.tomcat</groupId>
+	    <artifactId>tomcat-servlet-api</artifactId>
+	    <version>7.0.21</version>
+	    <scope>provided</scope>
+    </dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl-version}</version>
+			<!-- <scope>provided</scope> --> <!-- this one is commented because it generates a jasper error that the jstl library is missing -->
+		</dependency>
+		
+		<!-- JSON -->
+		<!-- 
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		 -->
+		
+		<!--Jackson, JSON support for spring: org.springframework.web.servlet.view.json.MappingJacksonJsonView -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${org.codehaus.jackson-version}</version>
+		</dependency>
+        <dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>${org.codehaus.jackson-version}</version>
+		</dependency>
+		<!-- causing NoSuchMethodError 
+		<dependency>
+			<groupId>net.sf.spring-json</groupId>
+			<artifactId>spring-json</artifactId>
+			<version>1.3.1</version>
+		</dependency> -->		
+		
+		<!-- Thumbnalator -->
+		<dependency>
+			<groupId>net.coobird</groupId>
+			<artifactId>thumbnailator</artifactId>
+			<version>0.4.2</version>
+		</dependency>
+		
+		<!-- LRF EPUB tools, convert html->xhtml->epub -->
+		<!-- <dependency>
+			<groupId>lrf</groupId>
+			<artifactId>LRFTools</artifactId>
+			<version>0.9.236</version>
+		</dependency> -->
+		
+		<!-- LRF EPUB tools, siegmann -->
+	<dependency>
+			<groupId>nl.siegmann.epublib</groupId>
+			<artifactId>epublib-core</artifactId>
+			<version>3.1</version>
+		</dependency>
+		
+
+		<!-- file upload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+
+		<!-- apache common io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
+		</dependency> 
+		
+		<!-- Hibernate -->
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>  
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency> 
+	
+		<!--  <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-testing</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+		
+		<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>hibernate-c3p0</artifactId>
+	<version>${hibernate-version}</version>
+</dependency>
+<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>hibernate-infinispan</artifactId>
+	<version>${hibernate-version}</version>
+</dependency>
+
+<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>hibernate-proxool</artifactId>
+	<version>${hibernate-version}</version>
+</dependency>  -->
+             
+		
+		<!-- MySql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
+		</dependency>  
+		
+		<!-- Java Mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.4</version>
+		</dependency>
+		
+		<!-- Audio Library jaudiotagger -->
+		<dependency>
+			<groupId>net.jthink</groupId>
+			<artifactId>jaudiotagger</artifactId>
+			<version>2.0.4-SNAPSHOT</version>
+		</dependency> 
+		
+		<!-- CSS Parser -->
+		<dependency>
+			<groupId>net.sourceforge.cssparser</groupId>
+			<artifactId>cssparser</artifactId>
+			<version>0.9.6</version>
+		</dependency>
+		
+		<!-- Captcha generator library - SimpleCaptcha -->
+		<dependency>
+			<groupId>nl.captcha</groupId>
+			<artifactId>Captcha</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		
+		<!--  not sure if necessary -->
+		<dependency>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+		
+		<!--  not sure if necessary -->
+		<dependency>
+	      <groupId>org.w3c.css</groupId>
+	      <artifactId>sac</artifactId>
+	      <version>1.3</version>
+	    </dependency>
+		
+		<!--  not sure if necessary -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		
+		<!-- Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${org.springframework.security-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${org.springframework.security-version}</version>
+		</dependency> 
+		            
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${org.springframework.security-version}</version>
+		</dependency>
+		
+		<!-- fixes dependency errors in eclipse header.tag -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- <dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-openid</artifactId>
+		    <version>3.0.1.RELEASE</version>
+		</dependency> -->
+				
+		<!-- Servlet -->
+		<!-- 
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+	 -->
+		<!-- Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency> 
+		
+		<!-- for deployment -->
+		<!-- <dependency>
+			<groupId>org.codehaus.cargo</groupId>
+			<artifactId>cargo-maven2-plugin</artifactId>
+			<version>1.2.0</version>
+		</dependency> -->
+                   
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<warName>branchitup</warName>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<warFile>target/branchitup.war</warFile> <!-- define the path of war file to be deployed -->
+					<server>tomcat-server</server> <!-- this name refers to the <server> block in the file /usr/programs/springsource/apache-maven-3.0.3/conf/settings.xml -->
+					<!-- <path>/</path> --><!-- deploy - context on laptop server-->
+					<path>/</path><!-- deploy - context on production/dev-->
+					<url>http://192.168.0.103:80/manager/text</url><!-- configuration for remote deployment -->
+					<!-- <url>http://192.168.0.115:8080/manager/text</url> -->
+				</configuration>
+			</plugin>
+			
+			<!-- flyway -->
+			<plugin>
+			    <groupId>com.googlecode.flyway</groupId>
+			    <artifactId>flyway-maven-plugin</artifactId>
+			    <version>2.1.1</version>
+			    
+			    <configuration>
+				    <driver>org.hsqldb.jdbcDriver</driver>
+				    <url>jdbc:mysql://localhost:3306/branchitup</url>
+				    <user>root</user>
+				    <password>root</password>
+				    <schemas>
+				        <schema>branchitup</schema>
+				    </schemas>
+				    <table>schema_history</table>
+				    <initVersion>1.0</initVersion>
+				    <initDescription>Base Migration</initDescription>
+				    <skip>false</skip>
+				</configuration>
+			</plugin>
+			
+			<!-- deploy - authentication -->
+			<!-- in /usr/programs/springsource/apache-maven-3.0.3/conf/settings.xml put
+			<server>
+		        <id>tomcat-server</id>
+		        <username>tomcat</username>
+		        <password>tomcat</password>
+			</server>
+			 -->
+			
+			<!-- Cargo plugin for deploy -->
+			<!-- <plugin>
+	            <groupId>org.codehaus.cargo</groupId>
+	            <artifactId>cargo-maven2-plugin</artifactId>
+	            <configuration>
+	                <wait>true</wait>
+	                <container>
+	                    <containerId>tomcat7.0.26</containerId>
+	                    <type>remote</type>
+	                </container>
+	                <configuration>
+	                    <type>remote</type> 
+	                    <properties>
+	                        <cargo.tomcat.manager.url>https://192.168.0.103/manager</cargo.tomcat.manager.url>
+	                        <cargo.remote.username>tomcat</cargo.remote.username>
+	                        <cargo.remote.password>tomcat</cargo.remote.password>
+	                    </properties>
+	                </configuration>
+	                <deployer>
+	                    <type>installed</type>
+	                    <deployables>
+	                        <deployable>
+	                            <groupId>com.branchitup</groupId>
+	                            <artifactId>branchitup</artifactId>
+	                            <type>war</type>
+	                            <properties>
+									<context>/branchitup</context>
+					            </properties>
+	                        </deployable>
+	                    </deployables>
+	                </deployer>
+	            </configuration>
+	            <executions>
+	                <execution>
+	                    <id>start-container</id>
+	                    <phase>pre-integration-test</phase>
+	                    <goals>
+	                        <goal>deployer-deploy</goal>
+	                    </goals>
+	                </execution>
+	                <execution>
+	                    <id>stop-container</id>
+	                    <phase>post-integration-test</phase>
+	                    <goals>
+	                        <goal>deployer-undeploy</goal>
+	                    </goals>
+	                </execution>
+	                <execution>
+	                    <id>verify-deploy</id>
+	                    <phase>install</phase>
+	                    <goals>
+	                        <goal>deployer-deploy</goal>
+	                    </goals>
+	                </execution> 
+	                <execution>
+	                    <id>clean-undeploy</id>
+	                    <phase>pre-clean</phase>
+	                    <goals>
+	                        <goal>deployer-undeploy</goal>
+	                    </goals>
+	                </execution> 
+	            </executions>
+	        </plugin> -->
+		</plugins>
+	</build>
+</project>

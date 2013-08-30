@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>New Book</title>
+
+
+</head>
+<body>
+<script type="text/javascript" src="resources/js/branchitup/widgets/ItemsDropdown.js"></script>
+<script type="text/javascript">
+
+	function aaaaa(){
+		console.log("HHHHHHHHHHHHHHHHHHHHHHHH111");
+		var genreInput = new GenresDropdown({});
+		dojo.byId("newBook.genreInputContainer").appendChild(genreInput.domNode);
+		console.log(dojo.byId("newBook.genreInputContainer"));
+		console.log(genreInput.domNode);
+	}
+</script>
+<table>
+	<tbody>
+		<tr>
+			<td onclick="javascript:aaaaa()">New complication requires genre to be specified. If you don't specify genre, you will not be able to publish this book!</td>
+		</tr>
+		<tr>
+			<td id="newBook.genreInputContainer"></td>
+		</tr>
+	</tbody>
+</table>
+
+
+</body>
+</html>

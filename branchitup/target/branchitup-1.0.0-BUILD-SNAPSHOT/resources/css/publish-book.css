@@ -1,0 +1,71 @@
+div#publishbook\.centerPane{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+img#publishbook\.coverImage{
+	float: left;
+	width: 200px;
+	height: auto;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+div#publishbook\.bookBlock{
+	display: inline-block;
+	width: 100%;
+}
+
+table#publishbook\.bookInformationLayout{
+	width: 700px;
+	padding-left: 15px;
+}
+
+div#publishbook\.publisherCommentCell{
+	padding-left: 15px;
+}
+
+/* ul#publishbook\.roleList > li{
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+li#authorListItem{
+	list-style-image: url('../images/writing_20x20.png');
+}
+li#illustratorListItem{
+	list-style-image: url('../images/illustrating_24x20.png');
+}
+li#translatorListItem{
+	list-style-image: url('../images/translating_26x20.png');
+}
+li#editorListItem{
+	list-style-image: url('../images/editing_14x20.png');
+}
+li#proofreaderListItem{
+	list-style-image: url('../images/co-writing_21x20.png');
+}
+
+img[name='roleIcon']{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: auto;
+	height: 15px;
+} */
+
+.textarea{
+	width: 800px;
+	height: 120px !important;
+}
+
+ul#publishbook\.deficiencyList{
+  list-style: none;
+}
+
+img#publishbook\.submitButton{
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+img#publishbook\.submitButton:hover{
+	border: 1px solid orage;
+}

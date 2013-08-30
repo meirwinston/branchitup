@@ -1,0 +1,5 @@
+#surefire
+#Mon Aug 13 04:29:16 BST 2012
+user.dir=/home/meir/workspace/branchitup/branchitup
+localRepository=/home/meir/.m2/repository
+basedir=/home/meir/workspace/branchitup/branchitup

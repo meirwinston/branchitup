@@ -1,0 +1,13 @@
+{
+identifier: "ISO632-2",
+items:
+[
+    {name:"English", 'ISO632-2':"ENG", 'ISO632-1': "EN"},
+    {name:"Spanish", 'ISO632-2':"SPA", 'ISO632-1': "ES"},
+    {name:"French", 'ISO632-2':"FRE", 'ISO632-1': "FR"},
+    {name:"German", 'ISO632-2':"GER", 'ISO632-1': "DE"},
+    {name:"Russian", 'ISO632-2':"RUS", 'ISO632-1': "RU"},
+    {name:"Swedish", 'ISO632-2':"SWE", 'ISO632-1': "SV"},
+    {name:"Italian", 'ISO632-2':"ITA", 'ISO632-1': "IT"}
+]
+}

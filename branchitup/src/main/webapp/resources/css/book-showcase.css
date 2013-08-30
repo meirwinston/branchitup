@@ -1,0 +1,50 @@
+table.bookShowcase{
+	border-spacing: 0;
+	width: 400px;
+	border: 1px solid gray;
+	background-color: white;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 4px 4px 4px #aaaaaa;
+	/* margin-left: auto;
+	margin-right: auto; */
+}
+
+table.bookShowcase td{
+	padding: 0;
+}
+
+table.bookShowcase td[name="header"]{
+	background-image: url(../images/no-slide-selected170x20.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+table.bookShowcase td[name="navigate"]{
+	width: 20px;
+}
+
+table.bookShowcase td[name="navigate"] > img{
+	cursor: pointer;
+}
+
+table.bookShowcase img[name="coverImage"]{
+	width: 150px;
+	/* height: 150px; */
+	height: auto;
+}
+
+table.bookShowcase div[name="imagePanel"]{
+	border: 1px solid orange;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 3px;
+}
+
+#bookShowcase\.bookDescription{
+	padding-left: 3px;
+}

@@ -1,0 +1,154 @@
+body{
+	font: normal 14px arial;
+	color: #333333;
+	margin: 0;
+}
+
+input{
+	/*IE does not inherit the css in inputs*/
+	font-family: arial !important;
+}
+
+*.anchor{
+	text-decoration: none;
+	color: rgb(16,112,197);
+	cursor: pointer;
+}
+
+*.anchor:hover{
+	color: orange;
+}
+
+*.anchorBold{
+	text-decoration: none;
+	color: rgb(16,112,197);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+*.anchorBold:hover{
+	color: orange;
+}
+
+table.layoutTable{
+	border-spacing: 0px;
+}
+
+table.layoutTable td{
+	padding: 0px;
+}
+
+span.link{
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+
+/*-----------------------toolbar--------------------------*/
+table.toolbar{
+	/* background-image: url(../images/toolbar-background-black_30x30.png);
+	background-repeat: repeat-x; */
+	width: 100%;
+	height: 30px;
+	border-top: 3px solid #444444;
+	border-spacing: 0;
+	padding-bottom: 10px;
+}
+
+table.toolbar td#toolbar\.passage{
+	border-color: transparent #444444 transparent transparent;
+	border-style: solid;
+	border-width: 0px 30px 30px 30px;
+	height: 0px;
+	width: 0px;
+}
+
+table.toolbar td{
+	padding: 0;'
+}
+
+table.toolbar td.toolbarRightCell{
+	background-color: #444444;
+	text-align: right;
+}
+
+table.toolbar td#toolbar\.searchBox{
+	width: 400px;
+	padding-right: 5px;
+	padding-left: 15px;
+	border-bottom: 3px solid #444444;
+}
+
+table.toolbar td#toolbar\.searchButton{
+	width: 40px;
+	padding-right: 15px;
+	border-bottom: 0px solid #444444;
+}
+
+div.headerDevidor{
+	width: 100%;
+	border-top: 3px solid #444444;
+}
+
+/*----------------------------pagination--------------------------*/
+table.pagination{
+	display: inline;
+}
+.paginationSelectedLabel{
+	color: orange;
+	font-weight: bold;
+}
+.paginationUnselectedLabel{
+	font-weight: bold;
+	color: #444444;
+}
+.paginationNextBack{
+	font-weight: bold;
+	color: #444444;
+}
+
+/*----------------------------------*/
+
+
+.heading2{
+	font-size: large;
+	font-weight: bold;
+}
+
+.heading3{
+	font-size: medium;
+	font-weight: bold;
+}
+
+.heading4{
+	font-weight: bold;
+}
+
+.blueText{
+	color: rgb(16,112,197);
+}
+
+.blueHeading3{
+	color: rgb(16,112,197);
+	font-weight: bold;
+	font-size: medium;
+}
+
+.blueHeading4{
+	color: rgb(16,112,197);
+	font-weight: bold;
+}
+
+.noItemsHeading{
+	font-size: large;
+	font-weight: bold;
+	text-align: left;
+	color: grey;
+	padding-left: 20px;
+}
+
+.tooltipLabel{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}

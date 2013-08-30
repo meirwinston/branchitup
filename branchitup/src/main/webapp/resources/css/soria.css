@@ -1,0 +1,80 @@
+/*overwrite dojo class to remove margins*/
+.soria .dijitBorderContainer-dijitContentPane {
+    background-color: #FFFFFF;
+    padding: 0px;
+}
+/* TITLE PANE OF OPEN BOOK */
+.soria .dijitTitlePaneTitle {
+	background: white;
+	/*background:#fff url(images/titleBar.png) repeat-x top left;*/
+	border:0px solid #bfbfbf;
+	border-bottom:1px solid #bfbfbf;
+	/*
+	border-top:1px solid #bfbfbf;
+	border-right:1px solid #bfbfbf;
+	border-left:1px solid #bfbfbf;
+	*/
+	padding:3px 4px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #6d6d6d;
+}
+.soria .dijitTitlePaneTitleHover {
+	/*background: #f9f9f9 url(images/accordionItemActive.png) top repeat-x;*/
+}
+
+/* --------- */
+
+
+.soria .dijitTabContainerTop-dijitContentPane,
+.soria .dijitTabContainerLeft-dijitContentPane,
+.soria .dijitTabContainerBottom-dijitContentPane,
+.soria .dijitTabContainerRight-dijitContentPane,
+.soria .dijitAccordionContainer-dijitContentPane {
+    background-color: #fff;
+    padding: 0px;
+}
+
+.soria .dijitSplitContainer-dijitContentPane,
+.soria .dijitBorderContainer-dijitContentPane {
+    background-color: #fff;		
+    padding: 0px;
+}
+
+.soria .dijitBorderContainer {
+	background-color: #e1ebfb;
+	padding: 0px;
+}
+.soria .dijitSplitContainer-child,
+.soria .dijitBorderContainer-child {
+	
+	border: 0px #b1badf solid;
+}
+
+/* the border line of a tab between the tab and the container*/
+.soria .dijitTabContainerBottom-spacer, .soria .dijitTabContainerTop-spacer {
+    /*
+    background: none repeat scroll 0 0 #94B4E6;
+    border-bottom: 1px solid #ECF2FF;*/
+    
+    background: none repeat scroll 0 0 #5f6d81;
+    border-bottom: 1px solid #ECF2FF;
+    height: 2px;
+}
+
+/*
+
+.soria .dijitBorderContainer {
+	background-color: #e1ebfb;
+	padding: 0px;
+}
+*/
+/*
+.claro .dijitContentPane {
+	padding: 0px;
+}
+.claro .dijitSplitContainer-dijitContentPane,
+.claro .dijitBorderContainer-dijitContentPane {
+	background-color: #fff;		
+	padding: 0px;
+}*/

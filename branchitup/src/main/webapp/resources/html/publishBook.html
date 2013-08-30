@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Publish Book</title>
+<!-- embeded CSS does not work on IE -->
+</head>
+<body>
+<table id="publishBook.lobLayoutTable">
+<thead></thead>
+<tbody>
+	<tr><td>
+		<img id="publishBook.coverImage" src="">
+		<span id="publishBook.bookTitle" class='branchitup-h5' ></span>
+		<br /><br />
+		<span id="publishBook.bookSummary"></span>
+	</td></tr>
+	<tr><td>
+	Genres
+	
+	</td></tr>
+	<tr><td>
+	Your roles at this publication:
+	<ul id="publishBook.rolesList" class="publishBook-checkList">
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.authorRoleInput', checked: true" /><span>Author</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.illustratorRoleInput'" /><span>Illustrator</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.editorRoleInput'" /><span>Editor</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.translatorRoleInput'" /><span>Translator</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.proofReaderRoleInput'" /><span>Proof Reader</span></li>
+	</ul>
+	</td></tr>
+	<tr><td>
+	<input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.branchableInput', checked: true" /><span class="branchitup-checkboxLabel">Allow sub-versions of this book (You will be credited on any new publication)</span>
+	<br />
+	<br />
+	<span>
+	Please check your recommendations from below:
+	</span>
+	<ul id="publishBook.deficiencyList" class="publishBook-checkList">
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.coautorableInput', checked: true" /><span>Co-Authoring</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.proofReadableInput', checked: true" /><span>Proof-Reading</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.translatableInput',checked: true" /><span>Translation</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.illustratableInput', checked: true" /><span>Illustration</span></li>
+		<li><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.editableInput', checked: true" /><span>Editing</span></li>
+	</ul>
+	</td></tr>
+	
+	<!-- *** -->
+	
+	<tr><td>
+	<span class="branchitup-h5">
+	Export Options:
+	</span>
+	<br />
+	<br />
+	<table>
+		<tbody>
+			<tr>
+				<td>Include table of content?</td>
+				<td><input data-dojo-type="dojoui.CheckBox" data-dojo-props="id: 'publishBook.contentsTableInput', checked: true" /></td>
+			</tr>
+			<tr><td colspan="2"><img src="resources/images/gradientLine400x1.png" /></td></tr>
+			<tr>
+				<td>Orientation</td>
+				<td><input data-dojo-type="dijit.form.FilteringSelect" data-dojo-props="id: 'publishBook.orientationInput'" /></td>
+			</tr>
+			<tr><td colspan="2"><img src="resources/images/gradientLine400x1.png" /></td></tr>
+			<tr>
+				<td>Page Size</td>
+				<td><input data-dojo-type="dijit.form.FilteringSelect" data-dojo-props="id: 'publishBook.pageSizeInput'" /></td>
+			</tr>
+			<!-- 
+			<tr><td colspan="2"><img src="resources/images/gradientLine400x1.png" /></td></tr>
+			<tr>
+				<td>Starting Page Number</td>
+				<td><input data-dojo-type="dijit.form.NumberTextBox" data-dojo-props="id: 'publishBook.pageOffsetInput', maxLength: 3, required: true, value: 0, constraints:{min: 0, max: 999}" /></td>
+			</tr>
+			 -->
+		</tbody>
+	</table>
+	</td></tr>
+	
+	<!-- *** -->
+	
+	<tr><td style="text-align: center;">
+	<input data-dojo-type="dojoui.Button" data-dojo-props="id: 'publishBook.submitButton', label: 'Let\'s Publish'">
+	</td></tr>
+	
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/*-----------------------toolbar--------------------------*/
+table.publishedbook-toolbar{
+	background-image: url(../images/toolbar-background-black_30x30.png);
+	background-repeat: repeat-x;
+	width: 30px;
+	height: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/*----------------------------pagination--------------------------*/
+#commentsPagination{
+	margin-left: auto;
+}
+.paginationSelectedLabel{
+	color: orange;
+	font-weight: bold;
+}
+.paginationUnselectedLabel{
+	font-weight: bold;
+	/* color: black; */
+}
+.paginationNextBack{
+	font-weight: bold;
+	/* color: black; */
+}
+/*------------------Button*/
+.publishedbook img[name='branchBookImg']{
+	cursor: pointer;
+}
+/* .publishedbook img[name='branchBookImg']:hover{
+	cursor: pointer;
+	border: 1px solid orange;
+} */
+
+/*----------------------------------*/
+
+.publishedbook div#publishedbook\.centerPane{
+	padding: 10px;
+}
+
+.publishedbook div#publishedbook\.bottomPane{
+	padding: 10px;
+}
+
+.publishedbook .titleBlack{
+	color: black;
+}
+
+.publishedbook img[name='coverImage']{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.publishedbook div[name='comment']{
+	border-bottom: 1px dotted #AAAAAA;
+}
+
+.publishedbook h3.title{
+	color: rgb(16,112,197);
+}
+
+.publishedbook h4.title{
+	color: rgb(16,112,197);
+}
+
+.publishedbook span[name='rate']{
+	padding-right: 30px;
+}
+
+label[name='commentPostedOn']{
+	padding-left: 40px;
+}
+
+a[name='download']{
+	padding-left: 40px;
+	cursor: pointer;
+	text-decoration: none;
+	color: rgb(16,112,197);
+}
+
+a[name='download']:hover{
+	color: orange;	
+}
+
+.publishedbook span[name='publisher']{
+	font-size: small;
+	color: rgb(16,112,197);
+}
+
+.publishedbook .blueText{
+	font-size: small;
+	color: rgb(16,112,197);
+}
+
+.publishedbook .blueSubtitle{
+	font-size: 15px;;
+	font-weight: bold;
+	color: rgb(16,112,197);
+}
+
+.greySmall{
+	font-size: small;
+	color: gray;
+}
+
+.publishedbook span[name='ratingCount']{
+	font-size: small;
+	color: gray;
+}
+/*-------------*/
+
+.publishedbook img#publishedbook\.submitButton{
+	cursor: pointer;
+}
+
+/* .publishedbook img#publishedbook\.submitButton:hover{
+	border: 1px solid orange;
+	cursor: pointer;
+} */
+.publishedbook #publishedbook\.tabPane{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+label[name='rateitAction']{
+	font-weight: bold;
+	color: grey;
+	cursor: pointer;
+}
+
+label[name='rateitAction']:hover{
+	color: orange;
+}
+
+.publishedbook #publishedbook\.textareaSubscript{
+	font-size: x-small;
+	color: grey;
+}
+.tabToolbarAction{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.tabToolbarActionSelected{
+	font-weight: bold;
+	cursor: pointer;
+	color: orange;
+}
+
+.publishedbook .tabToolbarDividor{
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*---*/
+
+.publishedbook div#publishedbook\.pathOfBranch{
+	text-align: center;
+}
+.publishedbook span[name='branchItem']{
+	border: 1px solid gray;
+	display: inline-block;
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.publishedbook span[name='branchItemSeperator']{
+	height: 30px;
+	border-left: 1px dashed gray;
+}
+
+.publishedbook #publishedbook\.commentTextare{
+	width: 100%;
+	height: 180px !important;
+}
+
+.publishedbook #publishedbook\.submitButton{
+	float: right;
+}
+
+img[name='downloadImg']{
+	cursor: pointer;
+	margin-right: 5px;
+}

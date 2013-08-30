@@ -1,0 +1,141 @@
+body {
+	font-family: arial;
+	color: rgb(104,104,104);
+}
+
+.signup table{
+	border-spacing: 0;
+}
+
+.signup td[name='errorCell']{
+	color: red;
+}
+
+.signup img[name='submitButton']{
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+#signup\.logo{
+	cursor: pointer;
+}
+
+/* .signup img[name='submitButton']:hover{
+	border: 1px solid orange;
+} */
+
+#signup\.loginTitleCell{
+	background-color: rgb(243,243,243);
+	padding: 0;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+}
+
+.signup span[name='registerNow']{
+	font-size: small;
+}
+.signup div[name='logo']{
+	text-align: left;
+	height: 50px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.signup td[name='agreeCell']{
+	font-size: small;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.signup table[name='layoutTable']{
+	border: 6px solid  rgb(233,233,233);
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 600px;
+	text-align: center;
+}
+
+.signup td[name='submitCell']{
+	text-align: right;
+	padding-right: 10px;
+}
+
+/* .signup td[name='emailAddressCell']{
+	text-align: center;
+}
+
+.signup td[name='passwordCell']{
+	text-align: center;
+}
+ */
+
+.signup td[name='descriptionCell']{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+.dijitInputContainer {
+	margin-top: 5px;
+    /* float: none !important;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: bottom; */
+}
+
+/* .tundra .dijitInputContainer input, .tundra .dijitTextBox {
+    margin: 0 0.1em;
+} */
+.dijitTextBox input {
+    float: left;
+    background-color: transparent !important;
+    border: 0 none !important;
+    height: 44px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+    vertical-align: middle !important;
+    width: 290px !important;
+}
+
+.dijitPlaceHolder {
+    color: #AAAAAA;
+    font-style: italic;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+/* 
+.tundra div[widgetid='emailAddress']{
+	background-image: url(../images/empty-form-box_350x48.png);
+	width: 350px;
+  height: 48px;
+  border: 1px solid white;
+  vertical-align: middle;
+}
+.tundra div[widgetid='j_password']{
+	background-image: url(../images/empty-form-box_350x48.png);
+	width: 350px;
+  height: 48px;
+  border: 1px solid white;
+  vertical-align: middle;
+} */
+
+.tundra .dijitTextBox {
+    background: url(../images/empty-form-box_350x48.png);
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    width: 350px;
+  	height: 48px;
+}
+
+.tundra input.dijitValidationIcon {
+    /* background: url("images/warning.png") no-repeat scroll center center transparent; */
+    background: url("");
+    /* width: 0; */
+}

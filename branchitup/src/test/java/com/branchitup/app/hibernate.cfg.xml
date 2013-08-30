@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/branchitup</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.pool_size">10</property>
+		<property name="show_sql">true</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<mapping class="com.branchitup.persistence.entities.PublishedSheet" />
+<mapping class="com.branchitup.persistence.entities.Sheet_Book" />
+<mapping class="com.branchitup.persistence.entities.RatingKey" />
+<mapping class="com.branchitup.persistence.entities.BookPost" />
+<mapping class="com.branchitup.persistence.entities.Rating" />
+<mapping class="com.branchitup.persistence.entities.Sheet_Genre" />
+<mapping class="com.branchitup.persistence.entities.PublishedBookDetails" />
+<mapping class="com.branchitup.persistence.entities.PublisherKey" />
+<mapping class="com.branchitup.persistence.entities.Genre" />
+<mapping class="com.branchitup.persistence.entities.BaseEntity" />
+<mapping class="com.branchitup.persistence.entities.ProfileUserNamesRecord" />
+<mapping class="com.branchitup.persistence.entities.Attachment" />
+<mapping class="com.branchitup.persistence.entities.PublicRecord" />
+<mapping class="com.branchitup.persistence.entities.Publisher" />
+<mapping class="com.branchitup.persistence.entities.PublishedBook_GenreKey" />
+<mapping class="com.branchitup.persistence.entities.SheetContent" />
+<mapping class="com.branchitup.persistence.entities.ParentBook" />
+<mapping class="com.branchitup.persistence.entities.PublishedBook_Genre" />
+<mapping class="com.branchitup.persistence.entities.Sheet_BookKey" />
+<mapping class="com.branchitup.persistence.entities.Sheet" />
+<mapping class="com.branchitup.persistence.entities.UserItem" />
+<mapping class="com.branchitup.persistence.entities.UserName" />
+<mapping class="com.branchitup.persistence.entities.PublishedBook" />
+<mapping class="com.branchitup.persistence.entities.GenreDetails" />
+<mapping class="com.branchitup.persistence.entities.Review" />
+<mapping class="com.branchitup.persistence.entities.Book" />
+<mapping class="com.branchitup.persistence.entities.ImageFileId" />
+<mapping class="com.branchitup.persistence.entities.UserDownloadsCount" />
+<mapping class="com.branchitup.persistence.entities.BookDetails" />
+<mapping class="com.branchitup.persistence.entities.GenreTitle" />
+<mapping class="com.branchitup.persistence.entities.ReviewRate" />
+<mapping class="com.branchitup.persistence.entities.Test" />
+<mapping class="com.branchitup.persistence.entities.ImageFile" />
+<mapping class="com.branchitup.persistence.entities.UserAccount" />
+<mapping class="com.branchitup.persistence.entities.BookShowcase" />
+<mapping class="com.branchitup.persistence.entities.BookDetailsSheet" />
+<mapping class="com.branchitup.persistence.entities.Contact" />
+<mapping class="com.branchitup.persistence.entities.AudioFile" />
+<mapping class="com.branchitup.persistence.entities.AudioFileRating" />
+
+
+
+	</session-factory>
+</hibernate-configuration>

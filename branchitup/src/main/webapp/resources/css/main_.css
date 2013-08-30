@@ -1,0 +1,445 @@
+body{
+	font: normal 14px arial;
+	color: black;
+	/* color: #5F6D81; */
+	/* background-color: #EFEFEF; */
+	margin: 0;
+}
+img[thumbnail="w100"]{
+	width: 100px;
+	height: auto;
+}
+img[thumbnail="w100Border"]{
+	width: 100px;
+	height: auto;
+	border: 2px solid orange;
+}
+/*IE requires nowrap to be applied on a cell basis*/
+.branchitupToolbar td{
+	white-space: nowrap;
+}
+/*---*/
+table[name='publicationItem.userRolesTable']{
+
+}
+
+table[name='publicationItem.userRolesTable'] td[name='label']{
+	width: 200px;
+}
+
+table[name='publicationItem.userRolesTable'] td[name='selector']{
+	width: 3px;
+	background-color: orange;
+	border: 2px solid white;
+}
+
+table[name='publicationItem.userRolesTable'] td{
+	border-bottom: 1px dotted orange;
+}
+
+table[name='publicationItem.userRolesTable'] td[name='head']{
+	color: orange;
+	font-weight: bold;
+	border-bottom: 1px solid orange;
+}
+/*---*/
+table[name='UserBooksBrowser.itemLayoutTable']{
+	color: #5f6d81;
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] td[name='bookTitle']{
+	font-weight: bold;
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] td[name='bookSummary']{
+	height: 80%;
+	vertical-align: top;
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] td[name='createdOn']{
+	font-size: xx-small;
+	vertical-align: top;
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] td[name='footer']{
+	vertical-align: bottom;
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] span[name='openLink']{
+	color: blue; 
+	text-decoration: underline; 
+	cursor:pointer;
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] span[name='deleteLink']{
+}
+
+table[name='UserBooksBrowser.itemLayoutTable'] span[name='publishLink']{
+}
+
+/*---*/
+
+.branchitupTest{
+	color: red;
+	font-weight: bold;
+}
+
+.textInput{
+	border: 1px solid #8BA0BD;
+}
+.paginationSelectedLabel{
+	color: orange;
+	font-weight: bold;
+}
+
+.paginationUnselectedLabel{
+	color: #5F6D81;
+	font-weight: bold;
+}
+
+.paginationNextBack{
+	color: #5F6D81;
+	font-weight: bold;
+}
+
+.label{
+	color: #5f6d81;
+}
+
+.labelBold {
+	font-weight: bold;
+	color: #5f6d81;
+}
+/*-----------*/
+.branchitup-checkboxLabel{
+	padding-left: 5px;
+}
+
+.branchitup-disabled{
+	color: #DDDDDD;
+}
+
+.branchitup-h5{
+	font-weight: bold;
+}
+/*-----------*/
+.branchitupLink{
+	color: blue; 
+	text-decoration: underline; 
+	cursor:pointer;
+}
+
+.branchitupLayoutTable{
+	border-width: 1px;
+	padding: 0;
+	margin: 0;
+	border-spacing: 0;
+	width: 100%;
+}
+
+
+.branchitupLinkTitle{
+	color: blue; 
+	text-decoration: underline; 
+	cursor:pointer;
+	font-weight: bold;
+}
+
+.branchitupGenericText{
+	color: #5f6d81;
+}
+.branchitupGenericTitle{
+	font-weight: bold;
+	color: #5f6d81;
+}
+
+.branchitupTest{
+	vertical-align: bottom;
+}
+
+*.branchitupSubscript{
+	font-size: xx-small;
+	vertical-align: bottom;
+}
+/***/
+body #centerPane{
+	background-color: #EFEFEF;
+	width: 100%;
+	/* border: 1px solid black; */
+	/* background: none repeat scroll 0 0 red; */
+	
+}
+
+/***/
+
+*.branchitupUserSheetsBrowserItem{
+	color: #5f6d81;
+	width: 100%;
+}
+
+*.branchitupUserSheetsBrowserItem > *[name='title']{
+	font-weight: bold;
+}
+
+*.branchitupUserSheetsBrowserItem > *[name='time']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+/***/
+
+*.branchitupDraggableSheetCell > *[name='title']{
+	font-weight: bold;
+	color: #5f6d81;
+}
+
+*.branchitupDraggableSheetCell > *[name='owner']{
+	padding-left: 4px;
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+*.branchitupDraggableSheetCell > *[name='createdOn']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+*.branchitupDraggableSheetCell > *[name='modifiedOn']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+*.branchitupDraggableSheetCell > *[name='genreName']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+*.branchitupDraggableSheetsTitle{
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+/***/
+#topToolbar{
+	width: 100%;
+	background-color: #111111;
+	height: 22px;
+}
+
+/***/
+
+*.branchitupPublicationItem{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid gray;
+	width: 98%;
+	background-color: white;
+	color: #333333;
+}
+
+*.branchitupPublicationItem img{
+	margin-right: 10px;
+}
+
+*.branchitupPublicationItem *[name='bookTitle']{
+	font-weight: bold;
+}
+
+*.branchitupPublicationItem *[name='publisher']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+*.branchitupPublicationItem *[name='publishedOn']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+*.branchitupPublicationItem *[name='parentTitle']{
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+*.branchitupPublicationItem > p{
+	/*color: gray;*/
+}
+
+*.branchitupPublicationItem td{
+	vertical-align: top;
+	padding-top: 0;
+}
+
+*.branchitupPublicationItemCell{
+	color: #5f6d81;
+	border-bottom: 1px dotted #8BA0BD;
+}
+
+/***/
+*.branchitupGenreItem > *[name='genreName']{
+	font-weight: bold;
+}
+
+*.branchitupGenreItem > *[name='editLink']{
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+
+*.branchitupGenreItem > *[name='datetime']{
+	font-size: x-small;
+	vertical-align: bottom;
+}
+
+
+*.branchitupGenreItem > p{
+	/*color: gray;*/
+}
+
+*.branchitupGenreItem{
+	padding-left: 20px;
+	vertical-align: top;
+	text-align: left;
+	color: #5f6d81;
+}
+
+/***/
+.pagination{
+	direction: ltr;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip:hover:after {
+    content: attr(title);
+    position: absolute;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 3px 7px;
+    color: #FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-left: 7px;
+    margin-top: -3px;
+}
+
+/***/
+.branchitupDeficiencyList > ul{
+	list-style-position: outside;
+	list-style-image: url('../images/nav_right_red10x10.png');
+	list-style-type: square;
+}
+
+.branchitupDeficiencyList > *[name="title"]{
+	font-weight: bold;
+}
+
+.branchitupDeficiencyList{
+	border-left: 1px dotted #DDDDDD;
+	color: #5f6d81;
+	padding-left: 7px;
+	width: 300px; 
+	vertical-align: top;
+}
+
+
+/* reviews */
+
+.ybobBookReviewsTable{
+	color: #5f6d81;
+}
+
+.ybobBookReviewsTable td[name='commentCell']{
+	border-bottom: 1px dotted #5f6d81;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.ybobBookReviewsTable *[name='reviewer']{
+	font-weight: bold;
+}
+
+*.ybobBookReviewsTable *[name='time']{
+	font-size: x-small;
+	vertical-align: bottom;
+	padding-left: 10px;
+}
+
+.ybobBookReviewsTable *[name='comment']{
+	padding-left: 5px;
+}
+/* end of reviews*/
+
+.branchitupSheetEditor{
+	color: black;
+	font-family: arial;
+	font-size: medium;
+	font-weight: normal;
+}
+
+/*-----------*/
+.branchitupImageItem{
+	border: 1px solid #999999;
+	width: auto;
+	height: auto;
+	margin: 5px;
+	padding: 6px;
+	
+}
+.branchitupImageItem img{
+	margin-right: 10px;
+}
+
+.branchitupErrorText{
+	color: red;
+}
+
+/*---------read book---------*/
+
+.branchitupReadBook #centerPane{
+	background: #5F6D81
+}
+
+.branchitupReadBook #paperA4{
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 1131px;
+	width: 800px;
+	background: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*---------end of read book---------*/
+
+/*---*/
+
+header{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/*----------*/
+/*
+.branchitupCloseIcon{
+	background-image: url("../images/tabClose12x12.png") no-repeat scroll right top transparent;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+*/
+/* dojox.layout.ExpandoPane overwrite style*/
+/*
+.a11yNode{
+	cursor: pointer;
+	width: 100%;
+	background-image: url('../images/tabClose12x12.png');
+}
+*/

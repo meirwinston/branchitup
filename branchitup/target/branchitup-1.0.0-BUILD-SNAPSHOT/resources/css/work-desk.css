@@ -1,0 +1,43 @@
+.workdesk div#workdesk\.centerPane{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* #workDesk\.navigationPane{
+	padding-bottom: 15px;
+} */
+
+#workDesk\.navigationPane a{
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+#workDesk\.navigationPane img{
+	padding-right: 5px;
+}
+
+#workDesk\.sheetsHeader{
+	padding-top: 15px;
+}
+
+/* #workDesk\.sheetsHeader label{
+	padding-left: 20px;
+}
+ */
+.sectionDividor{
+	border-bottom: 1px dotted gray;
+	padding-bottom: 15px;
+}
+
+#workDesk\.booksHeader{
+	padding-top: 15px;
+}
+
+.listTable tr > td{
+	padding: 5px;
+}
+
+.listTable *[name='publicationThumbnail']{
+	width: 40px;
+	height: auto;
+}

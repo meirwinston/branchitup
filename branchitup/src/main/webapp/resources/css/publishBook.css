@@ -1,0 +1,40 @@
+img[name="publishBook.coverImage"]{
+	float: left; 
+	border: 2px solid orange;
+}
+
+table[name="publishBook.layoutTable"] {
+    border-spacing: 0;
+    border-width: 1px;
+    padding: 10px;
+    width: 100%;
+}
+
+ul.publishBook-checkList{
+	list-style-position: outside;
+	list-style-image: url('../../resources/images/nav_right_red10x10.png');
+	list-style-type: square;
+}
+
+ul.publishBook-checkList-disabled{
+	list-style-position: outside;
+	list-style-image: url('../../resources/images/nav_right_red10x10.png');
+	list-style-type: square;
+}
+
+ul.publishBook-checkList-disabled span{
+	color: #DDDDDD;
+}
+
+table[name="publishBook.layoutTable"] > tbody > tr > td{
+  border-bottom: 1px dotted gray;
+  padding: 5px;
+}
+
+span[name="publishBook.bookTitle"]{
+	padding-left: 7px;
+}
+
+span[name="publishBook.bookSummary"]{
+	padding-left: 7px;
+}

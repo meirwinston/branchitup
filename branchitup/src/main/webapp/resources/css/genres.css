@@ -1,0 +1,31 @@
+.genres div[name='genreItem']{
+	border-bottom: 1px solid #BBBBBB;
+	margin: 15px;
+	/* height: 120px;	 */
+	padding-bottom: 10px;
+}
+
+.genres div[name='genreItem'] > img{
+	float: left;
+	padding-right: 20px;
+	height: 100px;
+	width: auto;
+}
+
+.genres div[name='genreItem'] > span[name='genreTitle']{
+	color: rgb(16,112,197);
+	font-weight: bold;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.genres div[name='genreItem'] > span[name='genreDate']{
+	color: rgb(16,112,197);
+	font-size: x-small;
+}
+
+/*----------toolbar----------*/
+
+table.toolbar td#genres\.paginationCell{
+	width: 200px;
+}

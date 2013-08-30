@@ -1,0 +1,20 @@
+.contactus table[name='layout']{
+	border-spacing: 10px;
+	width: 800px;
+}
+
+.contactus table[name='layout'] td{
+	padding: 0px;
+}
+
+.contactus .textarea{
+	height: 300px !important;
+}
+
+.contactus img[name='submitButton']{
+	cursor: pointer;
+}
+
+div#contactus\.toolbar{
+	border-top: 3px solid #444444;
+}

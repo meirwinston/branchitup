@@ -1,0 +1,69 @@
+table#userWorkdesk{
+	border-spacing: 0;
+	width: 400px;
+	height: 80px;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 4px 4px 4px #aaaaaa;
+	background-color: white;
+	/* margin-left: auto;
+	margin-right: auto; */
+}
+
+table#userWorkdesk td{
+	padding: 0;
+}
+
+table#userWorkdesk td[name="headerLeft"]{
+	background-image: url(../images/workdesk-header-left_40x20.png);
+	width: 40px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #f6f6f6;
+}
+
+table#userWorkdesk td[name="headerRight"]{
+	background-image: url(../images/workdesk-header-right_27x20.png);
+	width: 27px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #f6f6f6;
+}
+
+table#userWorkdesk td[name="headerMiddle"]{
+	background-image: url(../images/workdesk-header-middle_12x20.png);
+	background-repeat: repeat-x;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+table#userWorkdesk td[name="headerMiddle"]:hover{
+	color: orange;
+}
+table#userWorkdesk td[name="2ndHeaderLeft"]{
+	background-image: url(../images/workdesk-header-left_40x7.png);
+	width: 40px;
+	height: 7px;
+	background-repeat: no-repeat;
+	background-position: top;
+	border-left: 1px solid gray
+}
+
+table#userWorkdesk td[name="2ndHeaderRight"]{
+	border-right: 1px solid gray;
+}
+table#userWorkdesk td[name="workdeskContent"]{
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding-left: 10px;
+	padding-top: 8px;
+	vertical-align: top;
+}
+
+table#userWorkdesk span[name="itemName"]{
+	padding-left: 5px;
+}
+
+/*table#userworkdesk\.itemsTable*/

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+
+	<!-- <bean id="modelService" class="com.branchitup.service.ModelServiceImpl"
+	p:sessionFactory-ref="sessionFactory"
+	p:scheduledService-ref="scheduledService"
+	p:mailService-ref="mailService">
+	</bean>
+	
+	
+	 -->
+	 
+	 
+	<bean id="systemAttributes" class="com.branchitup.system.SystemAttributes">
+		<property name="languageMap">
+			<map merge="true">
+				<entry key="ENG" value="English" />
+				<entry key="SPA" value="Spanish" />
+				<entry key="GER" value="German" />
+				<entry key="RUS" value="Russian" />
+				<entry key="ITA" value="Italian" />
+				<entry key="FRE" value="French" />
+				<entry key="HEB" value="Hebrew" />
+				
+				<!-- <entry key="DUT" value="Dutch" /> -->
+				<!-- <entry key="CHI" value="Chinese" /> -->
+				<!-- <entry key="HUN" value="Hungarian" /> -->
+				<!-- <entry key="ARA" value="Arabic" /> -->
+				<!-- <entry key="CZE" value="Czech" /> -->
+				<!-- <entry key="DAN" value="Danish" /> -->
+			</map>
+		</property>
+	</bean>
+	
+	<!-- 
+	bean->property name-> map merge="true" -> entry key value/value-ref
+	 -->
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<!-- <annotation-driven /> -->
+	
+	<!-- <tx:jta-transaction-manager /> -->
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	<!-- <resources mapping="/resources/**" location="/resources/" /> -->
+
+	<!-- <beans:bean id="branchitupViewResolver" class="com.branchitup.servlet.view.BaseViewResolver">
+		<beans:property name="beanNameViewResolver" ref="beanNameViewResolver" />
+    <beans:property name="inernalResourceViewResolver" ref="inernalResourceViewResolver" />
+	</beans:bean> -->
+	<!-- json resolver: must come before the url resolver -->
+	<!-- <beans:bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver"/> -->
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<!-- <beans:bean id="inernalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean> -->
+	
+	<!-- timer configurations -->
+	
+	<!-- <beans:bean id="generatePDF" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	  <beans:property name="targetObject" ref="generatePDFJob"/>
+	  <beans:property name="targetMethod" value="test"/>
+	</beans:bean> -->
+		
+	<!-- <beans:bean name="generatePDFJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<beans:property name="jobClass" value="com.branchitup.service.timer.GeneratePDFJob" />
+		<beans:property name="jobDataAsMap">
+			<beans:map>
+				<beans:entry key="runMeTask" value-ref="runMeTask" />
+			</beans:map>
+		</beans:property>
+	</beans:bean>
+	<beans:bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<beans:property name="jobDetail" ref="generatePDFJob" />
+		<beans:property name="repeatInterval" value="5000" />
+		<beans:property name="startDelay" value="1000" />
+	</beans:bean>
+		 
+	<beans:bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<beans:property name="triggers">
+		    <beans:list>
+		      <beans:ref bean="simpleTrigger" />
+		    </beans:list>
+	  	</beans:property>
+	</beans:bean> -->
+	
+	<!-- <beans:bean id="scheduledExecutorFactoryBean" class="org.springframework.scheduling.concurrent.ScheduledExecutorFactoryBean"></beans:bean> -->
+	
+	<!-- <beans:bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	</beans:bean> -->
+	
+	<!-- JSON -->
+	<!-- <beans:bean id="imageView" class="com.branchitup.servlet.view.ImageView" /> -->
+	<!-- <beans:bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" /> -->
+	<!-- <beans:bean id="jsonView" class="com.branchitup.servlet.view.JSONView" /> -->
+	<!-- <beans:bean name="simpleJsonGetController" class="com.branchitup.controller.JSONController"/>
+    <beans:bean name="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <beans:property name="mappings">
+            <beans:props>
+                <beans:prop key="/hello.json">simpleJsonGetController</beans:prop>
+           </beans:props>
+        </beans:property>
+    </beans:bean> 
+    <beans:bean name="viewResolver" class="org.springframework.web.servlet.view.XmlViewResolver" />
+    -->
+    <!-- without component-scan we'll get the following errors:
+    WARN : org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/branchitup/] in DispatcherServlet with name 'appServlet'
+		WARN : org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/branchitup/home] in DispatcherServlet with name 'appServlet'
+    
+     -->
+	<!-- <context:component-scan base-package="com.branchitup" /> -->
+	<!-- <context:component-scan base-package="com.branchitup.config" /> -->
+	
+	<!-- Hibernate 4 - moved to security-context.xml which initializes first -->
+	<!-- <beans:bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource" />
+		<beans:property name="packagesToScan" value="com.branchitup.persistence.entities" />
+		<beans:property name="hibernateProperties">
+			<beans:props>
+				<beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</beans:prop>
+				<beans:prop key="hibernate.show_sql">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+	
+	<beans:bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<beans:property name="sessionFactory">
+			<beans:ref bean="sessionFactory" />
+		</beans:property>
+		<beans:property name="hibernateManagedSession" value="true" />
+	</beans:bean> -->
+
+</beans>

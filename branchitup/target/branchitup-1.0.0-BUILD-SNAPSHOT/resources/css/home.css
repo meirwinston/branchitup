@@ -1,0 +1,153 @@
+/*-----------------------layout-------------------*/
+#home\.toolbar{
+	background-color: #f6f6f6;
+}
+*[name='layoutTable']{
+	width: 100%;
+	background-color: #f6f6f6;
+}
+#rightPane{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 400px;
+	vertical-align: top;
+}
+/*-----------------------toolbar--------------------------*/
+
+/*--------------------------------Publication Item----------------------------------------*/
+table.publicationItems{
+	border-spacing: 10px;
+}
+.publicationTitlePH{
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+td.publicationItem{
+	width: 280px; /*depends on home.js itemsPerRow*/
+	padding: 10px;
+	vertical-align: top;
+	background-color: white;
+	border: 1px solid #BBBBBB;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 4px 4px 4px #888888;
+	/* display: inline-block; */
+	/* position: relative; */
+}
+
+*.publicationItem div[name='branchitButtonContainer']{
+	width: 100%;
+	text-align: center;
+}
+
+*.publicationItem img[name='branchItImg']{
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+*.publicationItem *[name='bookTitle']{
+	color: rgb(16,112,197);
+	font-weight: bold;
+	font-size: medium;
+	cursor: pointer;
+}
+
+*.publicationItem *[name='bookDescription']{
+	color: #333333;
+}
+*.publicationItem *[name='bookDeficiencyList']{
+	color: gray;
+}
+*.publicationItem div[name='bookRatings']{
+	color: gray;
+	margin-top: 5px;
+}
+*.publicationItem *[name='attachmentsLabel']{
+	color: gray;
+}
+*.publicationItem *[name='bookDownloads']{
+	color: gray;
+}
+*.publicationItem *[name='downloadsCount']{
+	color: gray;
+}
+*.publicationItem div[name='bookImage']{
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid #888888;
+	position: relative;
+	background-color: #EEEEEE;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*.publicationItem table[name='bookImageHeader']{
+	color: white;
+	font-weight: bold;
+}
+
+*.publicationItem div[name='bookImageFooter']{
+	width: 100%; 
+	position: absolute; 
+	bottom: 0;
+	color: white;
+	font-weight: bold;
+}
+
+*.publicationItem td[name='topLeftCorner']{
+	background-image: url(../images/book-genre-tab-left-corner_15x20.png);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 20px;
+}
+
+*.publicationItem td[name='topRightCorner']{
+	background-image: url(../images/book-genre-tab-right-corner_14x20.png);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 20px;
+}
+
+*.publicationItem td[name='topLabel']{
+	background-image: url(../images/book-genre-tab-middle_10x20.png);
+	background-repeat: repeat-x;
+	height: 20px;
+}
+
+*.publicationItem td[name='bottomLeftCorner']{
+	background-image: url(../images/book-version-tab-left-corner_16x20.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 20px;
+}
+
+*.publicationItem td[name='bottomRightCorner']{
+	background-image: url(../images/book-version-tab-right-corner_14x20.png);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 20px;
+}
+
+*.publicationItem td[name='bottomLabel']{
+	background-image: url(../images/book-version-tab-middle_9x20.png);
+	background-repeat: repeat-x;
+	height: 20px;
+}
+
+.attachmentIcon{
+	cursor: pointer;
+	margin-left: 10px;
+}
+/* *.publicationItem img[name='pdfAttachment']{
+	cursor: pointer;
+	margin-left: 10px;
+}; */
+
+*.publicationItem span[name='downloadPdfLabel']{
+	margin-left: 10px;
+};
+
+/*-----------------------end of Publication Item -----------------------------------------------*/

@@ -1,0 +1,68 @@
+#layoutTable{
+	width: 100%;
+	margin: 0;
+}
+.blogTitle{
+	font-family: georgia,"times new roman",times,serif;
+	color: rgb(0,112,192);
+	font-size: 2.2em;
+	text-align: center;
+	margin: 0;
+}
+
+.blogSubtitle{
+	font-family: georgia,"times new roman",times,serif;
+	color: red;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+.articleTitle{
+	font-family: georgia,"times new roman",times,serif;
+	color: rgb(0,112,192);
+	text-align: center;
+	margin: 0;
+}
+
+.articleBody{
+	font-family: georgia,"times new roman",times,serif;
+	color: #000000;
+	font-size: 1.1em;
+	line-height: 1.467em;
+}
+
+.articleHeadline {
+	font-family: georgia,"times new roman",times,serif;
+	font-size: 2.0em;
+	font-weight: normal;
+	line-height: 1.083em;
+}
+
+.byline {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.byline, .dateline {
+    color: #808080;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+#commentsTitleLabel{
+	font-size: large;
+	font-family: georgia,"times new roman",times,serif;
+	color: rgb(0,112,192);
+}
+
+
+footer{
+	margin-top: 20px;
+	color: #808080;
+  font-size: small;
+  text-align: left;
+  font-family: georgia,"times new roman",times,serif;
+}
+
+*[name='commentatorName']{
+	margin-right: 20px;
+}

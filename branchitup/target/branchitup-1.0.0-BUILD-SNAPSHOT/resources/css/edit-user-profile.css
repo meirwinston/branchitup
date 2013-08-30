@@ -1,0 +1,22 @@
+#userprofile\.profileImage{
+	width: 200px;
+	height: auto;
+}
+#userprofile\.centerPane{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+}
+
+*[name='layoutTable'] td{
+	padding: 5px;
+}
+
+img[name='imageButton']{
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+/* img[name='imageButton']:hover{
+	border: 1px solid orange;
+} */

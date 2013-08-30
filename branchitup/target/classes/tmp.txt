@@ -1,0 +1,95 @@
+fc9fc3f8-9b3c-403c-8ef2-dd5c5515f211.JPEG
+
+changes:
+usergroup_authority
+usergroups
+useraccount_usergroup
+authorities
+
+
+
+tasksqueue
+id name timestamp
+clear the session after uploading the audio
+
+COMCAST
+10.1.10.1
+The default username is cusadmin.
+The default password is highspeed. (changed to ultrazone)
+
+MAC:
+neptune	192.168.0.2	ac-72-89-e5-6e-79	 (wireless)
+betelgeuse	192.168.0.115	d4-ae-52-a8-a0-e5
+modem: B8:9B:C9:79:8C:28
+08-00-27-00-D4-72 (neptune ethernet)
+20:4e:7f:3a:52:05 router (MAYBE)
+
+MYSQL
+grant all privileges on *.* to 'root'@'163.241.97.124' identified by 'root';
+
+
+//tomcat argument VMArgs in eclipse
+-Dcatalina.base="/apps/apache-tomcat-7.0.29" -Dcatalina.home="/apps/apache-tomcat-7.0.29" -Dwtp.deploy="/apps/apache-tomcat-7.0.29/branchitup" -Djava.endorsed.dirs="/apps/apache-tomcat-7.0.29/endorsed"
+-Xdebug
+-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n
+-Xmx512m -XX:PermSize=64m -XX:MaxPermSize=256m
+
+
+//--------------SELENIUM
+java -jar selenium-server-standalone-2.25.0.jar -role hub
+
+//--------------------------
+meir@titan:~/workspace/branchitup/branchitup$ /apps/apache-maven-3.0.4/bin/mvn -e -X war:war
+
+//war and scp
+meir@titan:~/workspace/branchitup/branchitup$ /apps/apache-maven-3.0.4/bin/mvn -e -X war:war; scp /home/meir/workspace/branchitup/branchitup/target/branchitup.war mwinston@192.168.0.115:/home/mwinston/downloads/
+
+/apps/tomcat-node1/bin/catalina.sh run
+/apps/tomcat-node2/bin/catalina.sh run
+
+#scp
+
+scp /home/meir/workspace/branchitup/branchitup/target/branchitup.war mwinston@192.168.0.115:/home/mwinston/downloads/
+
+#deploy
+
+/apps/tomcat-node1/bin/catalina.sh stop; rm /apps/tomcat-node1/webapps/ROOT.war ; rm -R /apps/tomcat-node1/webapps/ROOT; cp /home/mwinston/downloads/branchitup.war /apps/tomcat-node1/webapps/ROOT.war; /apps/tomcat-node1/bin/catalina.sh start; tail -f /apps/tomcat-node1/logs/catalina.out ;
+
+/apps/tomcat-node2/bin/catalina.sh stop; rm /apps/tomcat-node2/webapps/ROOT.war ; rm -R /apps/tomcat-node2/webapps/ROOT; cp /home/mwinston/downloads/branchitup.war /apps/tomcat-node2/webapps/ROOT.war; /apps/tomcat-node2/bin/catalina.sh start; tail -f /apps/tomcat-node2/logs/catalina.out ;
+
+
+---------backup images/pdfs
+
+cd /branchitup-env; sudo tar -pczf diskresources-backup2.tar.gz diskresources/
+
+//--
+
+less /apps/apache-tomcat-5.5.20/bin/setenv.sh
+and make sure that the following line is uncommented:
+JAVA_OPTS="${JAVA_OPTS} -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
+In eclipse: click the bug arrow icon -> debug configurations -> Remote Java Application and new: host: localhost, port: 8000 (the same as in the above line)
+
+
+
+[9:12:45 PM] Fling Design: http://basecamp.com/document-your-project-from-start-to-finish
+[9:20:23 PM] Fling Design: f6f1e7
+[9:24:20 PM] Fling Design: http://basecamp.com/find-file
+[9:25:45 PM] Fling Design: http://basecamp.com/write-together
+[9:26:19 PM] Fling Design: http://basecamp.com/drag-and-drop
+[9:35:20 PM] Fling Design: https://vimeo.com/50034630
+[9:37:25 PM] Fling Design: https://vimeo.com/49990815
+
+------------------
+-Xdebug
+-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n
+-Dcatalina.base="/apps/apache-tomcat-7.0.29" -Dcatalina.home="/apps/apache-tomcat-7.0.29" -Dwtp.deploy="/apps/apache-tomcat-7.0.29/branchitup" -Djava.endorsed.dirs="/apps/apache-tomcat-7.0.29/endorsed"
+
+DROP--------
+imagefiles.countByAlbum
+useritems.scrollBookLikeTitle
+useracconts.selectSheetOwners
+publishedbook.selectPathOfBranch
+publishers.selectRecursiveByBookId
+
+
+

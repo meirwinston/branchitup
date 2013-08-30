@@ -1,0 +1,127 @@
+body {
+	font-family: arial;
+	color: rgb(104,104,104);
+}
+
+.login table{
+	border-spacing: 0;
+}
+
+.login td[name='errorCell']{
+	color: red;
+}
+
+
+.login input[name='submitButton']{
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+/* .login input[name='submitButton']:hover{
+	border: 1px solid orange;
+} */
+
+.login td[name='loginTitleCell']{
+	background-color: rgb(243,243,243);
+	padding: 0;
+}
+
+.login span[name='registerNow']{
+	font-size: small;
+}
+.login div[name='titleCell'] {
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 400px;
+}
+
+.login td[name='forgotPasswordCell']{
+	font-size: small;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.login table[name='layoutTable']{
+	border: 6px solid  rgb(233,233,233);
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 400px;
+}
+
+.login td[name='submitCell']{
+	text-align: right;
+	padding-right: 10px;
+}
+
+.login td[name='emailAddressCell']{
+	text-align: center;
+}
+
+.login td[name='passwordCell']{
+	text-align: center;
+}
+
+
+.login td[name='descriptionCell']{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+
+.dijitInputContainer {
+    float: none !important;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.tundra .dijitInputContainer input, .tundra .dijitTextBox {
+    margin: 0 0.1em;
+}
+.dijitTextBox input {
+    float: left;
+    background-color: transparent !important;
+    border: 0 none !important;
+    height: 44px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+    vertical-align: middle !important;
+    width: 290px !important;
+}
+
+.dijitPlaceHolder {
+    color: #AAAAAA;
+    font-style: italic;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+.tundra div[widgetid='j_username']{
+	background-image: url(../images/username-box_350x48.png);
+	width: 350px;
+  height: 48px;
+  border: 1px solid white;
+  vertical-align: middle;
+}
+.tundra div[widgetid='j_password']{
+	background-image: url(../images/password-box_350x48.png);
+	width: 350px;
+  height: 48px;
+  border: 1px solid white;
+  vertical-align: middle;
+}
+/*
+.tundra .dijitTextBox {
+    background: url("images/validationInputBg.png") repeat-x scroll left top #FFFFFF;
+    border: 0px solid #B3B3B3;
+}*/

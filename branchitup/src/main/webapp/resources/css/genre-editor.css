@@ -1,0 +1,26 @@
+.genreeditor table[name='layout']{
+	border-spacing: 10px;
+	width: 800px;
+}
+
+.genreeditor table[name='layout'] td{
+	padding: 0px;
+}
+
+.genreeditor .textarea{
+	height: 150px !important;
+}
+
+.genreeditor img[name='genreImage']{
+	vertical-align: bottom;
+	width: 200px;
+	height: auto;
+}
+
+.genreeditor img[name='submitButton']{
+	cursor: pointer;
+}
+
+div#genreeditor\.toolbar{
+	border-top: 3px solid #444444;
+}

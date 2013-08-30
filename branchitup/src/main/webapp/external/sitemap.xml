@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.branchitup.com/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/home</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/signup</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/login</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/genres</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/help/</loc>
+  <lastmod>2012-10-27T18:18:13+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/contactus</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.branchitup.com/restorepassword</loc>
+  <changefreq>always</changefreq>
+</url>
+</urlset>
